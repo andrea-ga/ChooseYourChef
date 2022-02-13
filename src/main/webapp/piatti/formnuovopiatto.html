@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Nuovo Piatto</title>
+		<link href="menu.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="formnuovopiatto.css"  type="text/css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			  $(document).ready(function() {
+			    $("#menu").load("menucuoco.html");
+			  });
+		</script>
+	</head>
+	<body>
+		<div id="menu"></div>
+		<form action="/piatti/nuovopiatto">
+		  <div class="imgcontainer">
+		      <img src="hot-pot.png" alt="Avatar" class="avatar">
+			  <a href="https://www.flaticon.com/free-icons/food" title="food icons">Food icons created by amonrat rungreangfangsai - Flaticon</a>
+		  </div>
+		
+		  <div class="container">
+		    <label for="nome"><b>Nome</b></label>   
+		    <input type="text" name="nome" placeholder="Nome..." required>
+		    <label for="tipo"><b>Tipo</b></label>   
+		    <input type="text" name="tipo" placeholder="Tipo..." required>
+		    <label for="cucina"><b>Cucina</b></label>   
+		    <input type="text" name="cucina" placeholder="Cucina..." required>
+		    <label for="allergeni"><b>Allergeni</b></label>   
+		    <input type="text" name="allergeni" placeholder="Allergeni..." required>
+        
+		    <button type="submit">Salva</button>
+		  </div>
+		</form> 
+</body>
+</html>

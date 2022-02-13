@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Nuova prenotazione</title>
+		<link href="menu.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="formnuovaprenotazione.css"  type="text/css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="formnuovaprenotazione.js"></script>
+		<script>
+			  $(document).ready(function() {
+			    $("#menu").load("menucliente.html");
+			  });
+		</script>
+	</head>
+	<body>
+		<div id="menu"></div>
+		<form action="/prenotati/nuovaprenotazione">
+		  <div class="imgcontainer">
+		      <img src="booking.png" alt="Avatar" class="avatar">
+			  <a href="https://www.flaticon.com/free-icons/booking" title="Booking icons">Booking icons created by Aldo Cervantes - Flaticon</a>
+		  </div>
+		
+		  <div class="container">
+		    <label for="npersone"><b>Numero Persone</b></label>   
+		    <input type="number" name="npersone" placeholder="Numero Persone..." required>
+        
+        	<div id = "dati">
+        	</div>
+		
+		    <button type="submit">Prenota</button>
+		  </div>
+		</form> 
+</body>
+</html>

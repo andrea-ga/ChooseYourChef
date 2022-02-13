@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<title>Nuovo Cuoco</title>
+			<link rel="stylesheet" href="menu.css"  type="text/css">
+			<link rel="stylesheet" href="formnuovocuoco.css"  type="text/css">
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script>
+				  $(document).ready(function() {
+				    $("#menu").load("menu.html");
+				  });
+			</script>
+	</head>
+	<body>
+		<div id="menu"></div>
+		<form action="/cuochi/nuovocuoco">
+		  <div class="imgcontainer">
+			  <img src="chef.png" alt="Avatar" class="avatar"/>
+			  <a href="https://www.flaticon.com/free-icons/chef" title="chef icons">Chef icons created by Freepik - Flaticon</a>
+		  </div>
+		
+		  <div class="container">
+		    <label for="username"><b>Username</b></label>
+		    <input type="text" placeholder="Username..." name="username" required>
+		
+		    <label for="password"><b>Password</b></label>
+		    <input type="password" placeholder="Password..." name="password" required>
+		    
+		    <label for="nome"><b>Nome</b></label>
+		    <input type="text" placeholder="Nome..." name="nome" required>
+		    
+		    <label for="cognome"><b>Cognome</b></label>
+		    <input type="text" placeholder="Cognome..." name="cognome" required>
+		    
+		    <label for="dob"><b>Data di nascita</b></label>
+		    <input type="date" name="dob" required>
+		    
+		    <label for="citta"><b>Città</b></label>
+		    <input type="text" placeholder="Città..." name="citta" required>
+		    
+		    <label for="costoorario"><b>Costo orario</b></label>
+		    <input type="number" placeholder="Costo orario..." name="costoorario" step=1 required>
+		
+		    <button type="submit">Registrati</button>
+		  </div>
+		</form> 
+    </body>
+</html>

@@ -1,0 +1,12 @@
+#menu{
+	background-color: #DC143C;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+#accesso{
+	float: right;
+}

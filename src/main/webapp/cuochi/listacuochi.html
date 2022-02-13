@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Lista cuochi</title>
+		<link href="menu.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="listacuochi.js"></script>
+		<script>
+			  $(document).ready(function() {
+			    $("#menu").load("menucliente.html");
+			  });
+		</script>
+	</head>
+	<body>
+		 <div id="menu"></div>
+		 <form action="/cuochi/listacuochi">
+			<br>
+	        <input type="date" name="prenotazione">
+	        <select name="fasciaoraria">
+	        	<option>Pranzo</option>
+	        	<option>Cena</option>
+	        </select>
+	        <input type="text" name="citta" placeholder="Città..">
+	        
+	        <input type="submit" value="Cerca Cuochi Disponibili">
+	
+    	</form>
+    	
+		<h1>Lista dei cuochi: </h1>
+		<table id="elenco" class="w3-table-all">
+		</table>
+	</body>
+</html>

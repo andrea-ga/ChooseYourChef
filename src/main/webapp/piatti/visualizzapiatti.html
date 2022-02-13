@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Piatti</title>
+		<link href="menu.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="visualizzapiatti.js"></script>
+		<script>
+			  $(document).ready(function() {
+			    $("#menu").load("menucliente.html");
+			  });
+		</script>
+	</head>
+	<body>
+		<div id="menu"></div>
+		<h1>Lista dei Piatti</h1>
+		<table id="elenco" class="w3-table-all">
+		</table>
+	</body>
+</html>

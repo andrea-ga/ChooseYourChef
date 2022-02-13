@@ -1,0 +1,29 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url(brooke-lark-HlNcigvUi4Q-unsplash.jpg);
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#chef{
+    color: #DC143C;
+}
+
+#titolo{
+	font-family: 'Pacifico', cursive;
+}
+
+#descrizione{
+	font-family: 'Montserrat', sans-serif;
+}

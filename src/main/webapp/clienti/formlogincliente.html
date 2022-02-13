@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Login Cliente</title>
+		<link rel="stylesheet" href="menu.css"  type="text/css">
+		<link rel="stylesheet" href="formnuovocliente.css"  type="text/css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			  $(document).ready(function() {
+			    $("#menu").load("menu.html");
+			  });
+		</script>
+	</head>
+	<body>
+		<div id="menu"></div>
+		<form action="/clienti/logincliente">
+		  <div class="imgcontainer">
+			  <img src="user.png" alt="Avatar" class="avatar">
+			  <a href="https://www.flaticon.com/free-icons/question" title="question icons">Question icons created by Freepik - Flaticon</a>
+		  </div>
+		
+		  <div class="container">
+		    <label for="username"><b>Username</b></label>
+		    <input type="text" placeholder="Username..." name="username" required>
+		
+		    <label for="password"><b>Password</b></label>
+		    <input type="password" placeholder="Password..." name="password" required>
+		
+		    <button type="submit">Login</button>
+		  </div>
+		</form> 
+    </body>
+</html>
